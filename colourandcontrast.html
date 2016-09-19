@@ -8,6 +8,7 @@
 body {font-family: 'Roboto', sans-serif; background-color: white; font-style:  normal;
   font-weight: 400;}
 p {max-width: 40em;}
+li {padding:.25em;}
 .blocks {display:flex; flex-wrap:wrap; justify-content:space-around; background-color:cornsilk;}
 .blocks section {max-width:320px; background-color:white; margin:1em;}
 .weight .loudest { font-weight: 900;}
@@ -55,19 +56,29 @@ p {max-width: 40em;}
 .b0 {background-color:#000;}
 .b2 {background-color:#222;}
 .b4 {background-color:#444;}
+.b5 {background-color:#555;}
 .b6 {background-color:#666;}
+.b7 {background-color:#777;}
 .b8 {background-color:#888;}
+.b9 {background-color:#999;}
 .ba {background-color:#aaa;}
+.bb {background-color:#bbb;}
 .bc {background-color:#ccc;}
+.bd {background-color:#ddd;}
 .be {background-color:#eee;}
 .bf {background-color:#fff;}
 .c0 {color:#000;}
 .c2 {color:#222;}
 .c4 {color:#444;}
+.c5 {color:#555;}
 .c6 {color:#666;}
+.c7 {color:#777;}
 .c8 {color:#888;}
+.c9 {color:#999;}
 .ca {color:#aaa;}
+.cb {color:#bbb;}
 .cc {color:#ccc;}
+.cd {color:#ddd;}
 .ce {color:#eee;}
 .cf {color:#fff;}
 
@@ -77,6 +88,17 @@ p {max-width: 40em;}
 
 <body>
 <h1>Color and contrast</h1>
+<h2>Contrast ratios illustrated</h2>
+<ul><li>21: <span class="bf c0">black on white</span> or <span class="b0 cf">white on black</span>.
+<li>13: <span class="bc c0">black on grey</span> or <span class="b0 cc">grey on black</span> or <span class="be c2">contrasting greys</span>.
+<li>10: <span class="bf c4">grey on white</span> or <span class="b4 cf">white on grey</span> or <span class="bc c2">grey on grey</span>.
+<li>7.5: <span class="bf c5">grey on white</span> or <span class="b5 cf">white on grey</span> or <span class="bd c4">grey on grey</span>.
+<li>4.5: <span class="bf c7">grey on white</span> or <span class="b7 cf">white on grey</span> or <span class="b7 c0">black on grey</span> or <span class="bc c5">grey on grey</span>.
+<li>3: <span class="bf c9">grey on white</span> or <span class="b9 cf">white on grey</span> or <span class="b5 c0">black on grey</span>  or <span class="ba c5">grey on grey</span>.
+<li>2: <span class="bf cb">grey on white</span> or <span class="bb cf">white on grey</span> or <span class="b4 c0">black on grey</span>  or <span class="bc c9">grey on grey</span>.
+<li>1: <span class="bf cf">black on black</span> or <span class="b0 co">white on white</span> or <span class="b8 c8">grey on grey</span> .
+</ul>
+
 <p>There are several ways to specify colours on the web. By name:
 <ul>
 <li>black <span style="background-color:black">black</span>
