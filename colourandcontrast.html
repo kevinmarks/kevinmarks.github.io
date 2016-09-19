@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head><title>Text Samples</title>
+<meta charset="utf-8">
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {font-family: 'Roboto', sans-serif; background-color: white; font-style:  normal;
+  font-weight: 400;}
+p {max-width: 40em;}
+.blocks {display:flex; flex-wrap:wrap; justify-content:space-around; background-color:cornsilk;}
+.blocks section {max-width:320px; background-color:white; margin:1em;}
+.weight .loudest { font-weight: 900;}
+.weight .loud { font-weight: 700;}
+.weight .emphatic { font-weight: 500;}
+.weight .normal { font-weight: 400;}
+.weight .soft { font-weight: 300;}
+.weight .softest { font-weight: 100;}
+
+.size .loudest { font-size:3em;}
+.size .loud { font-size:2em;}
+.size .emphatic { font-size: 1.4em;}
+.size .normal { font-size:1em;}
+.size .soft { font-size:.7em;}
+.size .softest { font-size:.5em;}
+
+.color .loudest {color:#000;}
+.color .loud {color:#222;}
+.color .emphatic {color: #444;}
+.color .normal {color:#666;}
+.color .soft {color:#888;}
+.color .softest {color:#aaa;}
+
+.google .loudest {font-weight: 300; font-size: 56px; line-height: 64px; color: rgba(0,0,0,.54)}
+.google .loud {font-weight: 400; font-size: 34px; line-height:40px; color: rgba(0,0,0,.54)}
+.google .emphatic {font-weight: 400; font-size: 16px; line-height:26px; color: rgba(0,0,0,.87)}
+.google .normal {font-weight: 500; font-size: 14px; line-height:24px; color: rgba(0,0,0,.87)}
+.google .soft {font-weight: 400; font-size: 14px; line-height:20px; color: rgba(0,0,0,.87)}
+.google .softest {font-weight: 400; font-size: 12px; line-height:16px; color: rgba(0,0,0,.54)}
+
+.apple .loudest {font-weight: 300; font-size: 38px; line-height: 1.1; color: #333;}
+.apple .loud {font-weight: 400; font-size: 24px; line-height:1.125; color: #666;}
+.apple .emphatic {font-weight: 700; font-size: 16px; line-height:1.5em; color: #000}
+.apple .normal {font-weight: 400; font-size: 16px; line-height:1.5em; color: #666;}
+.apple .soft {font-weight: 400; font-size: 16px; line-height:1em; color: #999;}
+.apple .softest {font-weight: 400; font-size: 12px; line-height: 1.333; color: #999;}
+
+.clearer .loudest { font-weight: 900; font-size:2em;}
+.clearer .loud { font-weight: 700; font-size:1.4em;}
+.clearer .emphatic { font-weight: 500; font-size:1em;}
+.clearer .normal { font-weight: 400; font-size:1em;}
+.clearer .soft { font-weight: 300;font-size:1em;}
+.clearer .softest { font-weight: 300;font-size:.8em;}
+
+.b0 {background-color:#000;}
+.b2 {background-color:#222;}
+.b4 {background-color:#444;}
+.b6 {background-color:#666;}
+.b8 {background-color:#888;}
+.ba {background-color:#aaa;}
+.bc {background-color:#ccc;}
+.be {background-color:#eee;}
+.bf {background-color:#fff;}
+.c0 {color:#000;}
+.c2 {color:#222;}
+.c4 {color:#444;}
+.c6 {color:#666;}
+.c8 {color:#888;}
+.ca {color:#aaa;}
+.cc {color:#ccc;}
+.ce {color:#eee;}
+.cf {color:#fff;}
+
+</style>
+<link href="https://fonts.googleapis.com/css?family=Roboto:100normal,300normal,400normal,500normal,700normal,900normal&amp;subset=all" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1>Color and contrast</h1>
+<p>There are several ways to specify colours on the web. By name:
+<ul>
+<li>black <span style="background-color:black">black</span>
+<li>grey <span style="background-color:grey">grey</span>
+<li>pink <span style="background-color:pink">pink</span>
+<li>lightgrey <span style="background-color:lightgrey">lightgrey</span>
+<li>white <span style="background-color:white">white</span>
+</ul>
+
+ way colours are specified on the web is by supplying numbers for red, green and blue from 0-255. 
+
+
+These are expressed as hex digits 0123456789ABCDEF. If the r,g,b match, they're a grey.
+<ul>
+<li class="b0"><span class="c0">#000 </span> <span class="c2">#222 </span> <span class="c4">#444 </span> <span class="c6">#666 </span><span class="c8">#888 </span>  <span class="ca">#aaa </span> <span class="cc">#ccc </span> <span class="cf">#fff </span>
+<li class="b2"><span class="c0">#000 </span> <span class="c2">#222 </span> <span class="c4">#444 </span> <span class="c6">#666 </span><span class="c8">#888 </span>  <span class="ca">#aaa </span> <span class="cc">#ccc </span> <span class="cf">#fff </span>
+<li class="b4"><span class="c0">#000 </span> <span class="c2">#222 </span> <span class="c4">#444 </span> <span class="c6">#666 </span><span class="c8">#888 </span>  <span class="ca">#aaa </span> <span class="cc">#ccc </span> <span class="cf">#fff </span>
+<li class="b6"><span class="c0">#000 </span> <span class="c2">#222 </span> <span class="c4">#444 </span> <span class="c6">#666 </span><span class="c8">#888 </span>  <span class="ca">#aaa </span> <span class="cc">#ccc </span> <span class="cf">#fff </span>
+<li class="b8"><span class="c0">#000 </span> <span class="c2">#222 </span> <span class="c4">#444 </span> <span class="c6">#666 </span><span class="c8">#888 </span>  <span class="ca">#aaa </span> <span class="cc">#ccc </span> <span class="cf">#fff </span>
+<li class="ba"><span class="c0">#000 </span> <span class="c2">#222 </span> <span class="c4">#444 </span> <span class="c6">#666 </span><span class="c8">#888 </span>  <span class="ca">#aaa </span> <span class="cc">#ccc </span> <span class="cf">#fff </span>
+<li class="bc"><span class="c0">#000 </span> <span class="c2">#222 </span> <span class="c4">#444 </span> <span class="c6">#666 </span><span class="c8">#888 </span>  <span class="ca">#aaa </span> <span class="cc">#ccc </span> <span class="cf">#fff </span>
+<li class="be"><span class="c0">#000 </span> <span class="c2">#222 </span> <span class="c4">#444 </span> <span class="c6">#666 </span><span class="c8">#888 </span>  <span class="ca">#aaa </span> <span class="cc">#ccc </span> <span class="cf">#fff </span>
+<li class="bf"><span class="c0">#000 </span> <span class="c2">#222 </span> <span class="c4">#444 </span> <span class="c6">#666 </span><span class="c8">#888 </span>  <span class="ca">#aaa </span> <span class="cc">#ccc </span> <span class="cf">#fff </span>
+
