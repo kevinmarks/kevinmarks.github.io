@@ -79,6 +79,8 @@ We also can supply a 1m mild steel bar that will make it easy to turn the drum, 
       <strong>6. Fixings:</strong><br />
 	              <select name="id[6]" onChange="sendRequestSearch(this.value); sendRequestSearch1(6);"><option value="29" name="zoek">No Fixings</option><option value="28" name="zoek">Cable Holding Device (Round) (+&pound;25.00)</option><option value="83" name="zoek">Cable Holding Device (Flat) (+&pound;25.00)</option><option value="47" name="zoek">Extended Loop Back (+&pound;15.31)</option><option value="74" name="zoek">Cable Batons (+&pound;20.00)</option><option value="75" name="zoek">Cable Batons & Extended Loop Back (+&pound;35.32)</option></select></tr>
       <strong>7. Launch End:</strong><br />
+<input type="radio" name="launchend" id="nolaunchend" checked> <input type="radio" name="launchend" id="launchend">
+<div class="pickone"><label for="nolaunchend">No Launch End Stopper</label> <label for="launchend">Launch End Stopper</label></div>
 	              <select name="id[7]" onChange="sendRequestSearch(this.value); sendRequestSearch1(7);"><option value="31" name="zoek">No Launch End Stopper</option><option value="30" name="zoek">Launch End Stopper (+&pound;35.74)</option></select></tr>
       <strong>8. Tools:</strong><br />
 	              <select name="id[8]" onChange="sendRequestSearch(this.value); sendRequestSearch1(8);"><option value="48" name="zoek">No Tools</option><option value="49" name="zoek">Auger Bits (+&pound;20.00)</option><option value="50" name="zoek">1m Tension Bar (+&pound;30.00)</option><option value="51" name="zoek">Auger Bits + 1m Bar (+&pound;50.00)</option><option value="82" name="zoek">Cable Puller (+&pound;60.00)</option></select></tr>
@@ -175,13 +177,21 @@ We also can supply a 1m mild steel bar that will make it easy to turn the drum, 
 #pendulum:checked ~ .pickone label[for=pendulum]
 {color:white; background:black;}
 
+#nolaunchend:checked ~ .flexpic #nolaunchendpic,
+#launchend:checked ~ .flexpic #nlaunchendpic
+{display:block;}
+#nolaunchend:checked ~ .pickone label[for=nolaunchend],
+#launchend:checked ~ .pickone label[for=launchend]
+{color:white; background:black;}
+
 </style>
 
 
 
 <div class="flexpic">
 <div class="picwrap fixingpic"><img src="/images/options/fixing-none.png"></div>
-<div class="picwrap launchpic"><img src="/images/options/launch-none.png"></div>
+<div class="picwrap launchpic" id="nolaunchendpic"><img src="/images/options/launch-none.png"></div>
+<div class="picwrap launchpic"  id="launchendpic"><img src="/images/options/launch-stopper.png"></div>
 <div class="dangle">
   <img class="trolleypic" id="notrolleypic" src=./images/options/trolley-none.png>
   <img class="trolleypic" id="stainlesspic" src=./images/options/trolley-stainless.png>
