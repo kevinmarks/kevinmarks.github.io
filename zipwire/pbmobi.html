@@ -154,7 +154,9 @@ We also can supply a 1m mild steel bar that will make it easy to turn the drum, 
 .dangle {flex-grow:207;}
 .brakepic {flex-grow:97;}
 .endtree {flex-grow:326;}
-.trolleypic,.accessorypic {display:none;}
+
+.trolleypic,.accessorypic,.launchpic img {display:none;}
+
 #notrolley:checked ~ .flexpic  #notrolleypic,
 #stainless:checked ~ .flexpic  #stainlesspic,
 #powder:checked ~ .flexpic  #powderpic,
@@ -178,7 +180,7 @@ We also can supply a 1m mild steel bar that will make it easy to turn the drum, 
 {color:white; background:black;}
 
 #nolaunchend:checked ~ .flexpic #nolaunchendpic,
-#launchend:checked ~ .flexpic #nlaunchendpic
+#launchend:checked ~ .flexpic #launchendpic
 {display:block;}
 #nolaunchend:checked ~ .pickone label[for=nolaunchend],
 #launchend:checked ~ .pickone label[for=launchend]
@@ -190,8 +192,7 @@ We also can supply a 1m mild steel bar that will make it easy to turn the drum, 
 
 <div class="flexpic">
 <div class="picwrap fixingpic"><img src="/images/options/fixing-none.png"></div>
-<div class="picwrap launchpic" id="nolaunchendpic"><img src="/images/options/launch-none.png"></div>
-<div class="picwrap launchpic"  id="launchendpic"><img src="/images/options/launch-stopper.png"></div>
+<div class="picwrap launchpic"><img id="nolaunchendpic" src="/images/options/launch-none.png"  ><img id="launchendpic" src="/images/options/launch-stopper.png"></div>
 <div class="dangle">
   <img class="trolleypic" id="notrolleypic" src=./images/options/trolley-none.png>
   <img class="trolleypic" id="stainlesspic" src=./images/options/trolley-stainless.png>
