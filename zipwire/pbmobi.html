@@ -61,8 +61,11 @@ We also can supply a 1m mild steel bar that will make it easy to turn the drum, 
 
     <p>Available Options:</p>
 
-    <p>
       <strong>1. Trolley:</strong><br />
+<input type="radio" name="trolley" id="notrolley" checked> <input type="radio" name="trolley" id="stainless"><input type="radio" name="trolley" id="powder"><input type="radio" name="trolley" id="swivel">
+<div class="pickone"><label for="notrolley">No Trolley</label> <label for="stainless">Stainless Steel</label><label for="powder">Powder Coated Steel</label><label for="swivel">Steel with Swivel Joint</label></div>
+	  
+	  <br />
 	              <select name="id[1]" onChange="sendRequestSearch(this.value); sendRequestSearch1(1);"><option value="2" name="zoek">No Trolley</option><option value="3" name="zoek">10mm Stainless Steel Trolley (+&pound;145.00)</option><option value="5" name="zoek">10mm Powder Coated Steel Trolley (+&pound;204.25)</option><option value="4" name="zoek">10mm Steel Trolley (With Swivel Joint) (+&pound;304.25)</option></select></tr>
 	  <br />
       <strong>2. Accessories:</strong><br />
@@ -86,9 +89,6 @@ We also can supply a 1m mild steel bar that will make it easy to turn the drum, 
       <strong>8. Tools:</strong><br />
 	              <select name="id[8]" onChange="sendRequestSearch(this.value); sendRequestSearch1(8);"><option value="48" name="zoek">No Tools</option><option value="49" name="zoek">Auger Bits (+&pound;20.00)</option><option value="50" name="zoek">1m Tension Bar (+&pound;30.00)</option><option value="51" name="zoek">Auger Bits + 1m Bar (+&pound;50.00)</option><option value="82" name="zoek">Cable Puller (+&pound;60.00)</option></select></tr>
 	  <br />
-<div class="afbeeldingen">
-
-
 
 
 
@@ -130,6 +130,17 @@ We also can supply a 1m mild steel bar that will make it easy to turn the drum, 
   width:100%;
   
 }
+input[type=radio] {
+    position: absolute;
+    left: -10000px;
+}
+.pickone {
+    display:flex;
+    flex-wrap: wrap;
+    font-size: small;
+    font-family: sans-serif;
+    justify-content: space-evenly;
+}
 .dangle, .endtree {
   display:flex;
   flex-direction:column;
@@ -138,17 +149,35 @@ We also can supply a 1m mild steel bar that will make it easy to turn the drum, 
 .picwrap img {width:100%;}
 .dangle img {width:100%;}
 .endtree img {width:100%;}
-.fixingpic {flex-grow:128}
-.launchpic {flex-grow:32}
-.dangle {flex-grow:207}
-.brakepic {flex-grow:97}
-.endtree {flex-grow:326}
+.fixingpic {flex-grow:128;}
+.launchpic {flex-grow:32;}
+.dangle {flex-grow:207;}
+.brakepic {flex-grow:97;}
+.endtree {flex-grow:326;}
+.trolleypic {display:none;}
+#notrolley:checked ~ .flexpic  #notrolleypic,
+#stainless:checked ~ .flexpic  #stainlesspic,
+#powder:checked ~ .flexpic  #powderpic,
+#swivel:checked ~ .flexpic  #swivelpic
+{display:block;}
+#notrolley:checked ~ .pickone label[for=notrolley],
+#stainless:checked ~ .pickone label[for=stainless],
+#powder:checked ~ .pickone label[for=powder],
+#swivel:checked ~ .pickone label[for=swivel]
+{color:white; background:black;}
+
 </style>
+
+
+
 <div class="flexpic">
 <div class="picwrap fixingpic"><img src="/images/options/fixing-none.png"></div>
 <div class="picwrap launchpic"><img src="/images/options/launch-none.png"></div>
 <div class="dangle">
-  <img class="trolleypic" src=./images/options/trolley-none.png>
+  <img class="trolleypic" id="notrolleypic" src=./images/options/trolley-none.png>
+  <img class="trolleypic" id="stainlesspic" src=./images/options/trolley-stainless.png>
+  <img class="trolleypic" id="powderpic" src=./images/options/trolley-powercoat.png>
+  <img class="trolleypic" id="swivelpic" src=./images/options/trolley-360.png>
   <img class="accessorypic" src=./images/options/accessory-none.png>
 </div>
 <div class="picwrap brakepic"><img src=./images/options/brake-none.png></div>
@@ -159,15 +188,6 @@ We also can supply a 1m mild steel bar that will make it easy to turn the drum, 
 </div>
 </div>
 
-<table style="width:100%">
-  <tr>
-    <td><a href="http://www.zip-wires.co.uk/uk-safety-regulations.php" title="UK Safety Regulations"><img src="images/meets-new-en1176-4-2017-standards.gif" alt="Meets New EN1176-4:2017 Zip Wire Standards" width="200" height="200" border="0"></a></td>
-    <td>This item meets an EN1176-4:2017 compliant installation when installed following the safety guidelines.<br>Excludes an installation using the blue or green handle bar which can NOT be used in a commercial application.</td>
-  </tr>
-</table>
-
-
-<a href="tel:+448008321947" ><img src=images/structure-example.gif </a>
 
 
 <div class="grid_24 footer">
