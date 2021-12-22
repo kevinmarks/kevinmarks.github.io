@@ -1,0 +1,14 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:v80m584bqa6ufa2e89bh1a5gc0@events.plus.google.com
+DTSTAMP:20181009T120824Z
+CREATED:20121218T174416Z
+LAST-MODIFIED:20121219T035639Z
+SUMMARY:Microformats Dinner & Drinks
+DESCRIPTION:It&#39;s nearing the end of 2012, and we&#39;ve got a lot of microformats accomplishments to be proud of. Let&#39;s celebrate with burritos at Pancho Villa.<br /><br />Dinner: 6:30-8:30pm at Pancho Villa<br />Come meet up with fellow web designers, developers, microformats enthusiasts for a bite or a pint - we&#39;ve got a lot to celebrate and talk about:<br /><br />microformats2 spec stabilization and PHP open source parser!<br />microformats creators/generators on <a href="https://github.com/microformats" class="ot-anchor">https://github.com/microformats</a><br />The microformats community has grown and stabilized over the past few years, news of adoptions, new ideas and challenges come up frequently enough that there are no shortage of new topics to discuss on a regular basis.<br /><br />Come along, meet up with the microformats community in San Francisco.<br /><br /><a href="http://microformats.org/wiki/events/2012-12-18-meetup" class="ot-anchor">http://microformats.org/wiki/events/2012-12-18-meetup</a><br /><a href="https://www.facebook.com/events/352625364773228/" class="ot-anchor">https://www.facebook.com/events/352625364773228/</a>
+URL:https://plus.google.com/events/cv80m584bqa6ufa2e89bh1a5gc0
+END:VEVENT
+END:VCALENDAR
